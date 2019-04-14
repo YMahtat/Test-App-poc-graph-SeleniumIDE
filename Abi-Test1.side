@@ -1,0 +1,84 @@
+{
+  "id": "c8be5677-50f8-4a60-8763-95310cc76933",
+  "version": "2.0",
+  "name": "Abi-Test1",
+  "url": "",
+  "tests": [{
+    "id": "14c5b8b0-7f0b-430c-a89c-4474521438ca",
+    "name": "Untitled",
+    "commands": [{
+      "id": "1a527a05-cc70-47ee-9ffa-e49aacff1bae",
+      "comment": "",
+      "command": "open",
+      "target": "http://poc-graph-test.azurewebsites.net/outlook",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02277081-83d5-4be4-89e7-706c4c397993",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Please sign in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20a5f8ad-2608-4125-a253-698926de1184",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [],
+      "value": "ymahtat"
+    }, {
+      "id": "cc04dd92-f884-45f5-8ee5-beca40cc3e75",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [],
+      "value": "642FG8Y7YZ"
+    }, {
+      "id": "666bbc51-8056-4cf3-8384-65ca97a8adc5",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@type=\"submit\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd7a1775-1290-4cb4-94d3-32f71b6ef210",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "POC-GRAPH",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4c21cb2-0a4b-49f9-8397-ab00b31a76c7",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@class=\"btn btn-danger\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a2238cb-f131-4a46-9e3a-d598b1c83e59",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "ok",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df2749e6-de49-4486-80e2-9741007639a3",
+      "comment": "",
+      "command": "assertText",
+      "target": "//h1",
+      "targets": [],
+      "value": "OK"
+    }]
+  }],
+  "suites": [{
+    "id": "f8422f98-52ee-45e9-8f71-88e730e21079",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["14c5b8b0-7f0b-430c-a89c-4474521438ca"]
+  }],
+  "urls": [],
+  "plugins": []
+}
